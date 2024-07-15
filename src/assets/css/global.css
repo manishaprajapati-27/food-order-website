@@ -9,11 +9,25 @@
 body {
   /* @apply bg-body; */
   font-family: "Poppins", sans-serif;
-  /* color: #ffffff;
-  color: #ffad0f;
-  color: #121063;
-  color: #1b1a1b;
-  color: #3ab7bf;
-  color: #ecebff;
-  color: #78dcca; */
 }
+
+p {
+  line-height: 1.5;
+  color: #3f3d3f;
+}
+
+.button {
+  background: #17605d;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 7px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* .button {
+  background: #17605d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 7px;
+} */

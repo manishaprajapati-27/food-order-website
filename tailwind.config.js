@@ -4,11 +4,13 @@ export default {
   theme: {
     colors: {
       transparent: "transparent",
-      current: "currentColor",
+      current: "",
       light: "#ffffff",
-      primary: "#ffad0f",
-      secondary: "#121063",
+      lightAlt: "#f5f1eb",
+      primary: "#17605d",
+      secondary: "#e84242",
       dark: "#1b1a1b",
+      darkAlt: "#3f3d3f",
       // metal: "#565584",
       // tahiti: "#3ab7bf",
       // silver: "#ecebff",
