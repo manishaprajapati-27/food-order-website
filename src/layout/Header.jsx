@@ -38,7 +38,10 @@ const Header = () => {
         <div className="container">
           <div className="flex justify-between">
             <div className="flex">
-              <button className="button">Location</button>
+              <a href="#" className="button">
+                <span>Location</span>
+                <span>Location</span>
+              </a>
             </div>
             <div className="align-center flex justify-center gap-10">
               <ul className="flex items-center justify-center gap-5">

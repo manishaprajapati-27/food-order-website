@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -31,7 +32,37 @@ export default {
         sansSerif: ["Poppins", "sans-serif"],
         sansSerifAlt: ["Raleway", "sans-serif"],
       },
+      clipPath: {
+        "custom-polygon":
+          "polygon(50% 0%, 100% 0, 100% 100%, 50% 86%, 0 100%, 0 0)",
+      },
+      backgroundImage: {
+        "special-burger": "url('src/assets/images/special-burger.jpg')",
+      },
+      textShadow: {
+        border:
+          "2.5px 2.5px 0 #17605d, -2.5px -2.5px 0 #17605d, 2.5px -2.5px 0 #17605d, -2.5px 2.5px 0 #17605d",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities, theme, e }) {
+      const clipPaths = theme("clipPath", {});
+      const utilities = Object.keys(clipPaths).map((key) => ({
+        [`.${e(`clip-${key}`)}`]: {
+          "clip-path": clipPaths[key],
+        },
+      }));
+      addUtilities(utilities);
+    }),
+    plugin(function ({ addUtilities, theme, e }) {
+      const textShadows = theme("textShadow", {});
+      const utilities = Object.keys(textShadows).map((key) => ({
+        [`.${e(`text-shadow-${key}`)}`]: {
+          "text-shadow": textShadows[key],
+        },
+      }));
+      addUtilities(utilities);
+    }),
+  ],
 };
