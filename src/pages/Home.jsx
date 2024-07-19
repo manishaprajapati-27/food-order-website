@@ -14,6 +14,9 @@ import {
   BlogFood,
   SpecialBurger,
   MainChef,
+  CounterSection,
+  GreateTaste,
+  TestimonialSection,
 } from "../components/HomeSections";
 
 const Home = () => {
@@ -27,6 +30,9 @@ const Home = () => {
       <BlogFood />
       <SpecialBurger />
       <MainChef />
+      <CounterSection />
+      <GreateTaste />
+      <TestimonialSection />
     </>
   );
 };

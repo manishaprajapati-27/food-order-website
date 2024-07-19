@@ -1,4 +1,5 @@
 import React from "react";
+import { MdOutlineStar, MdOutlineStarBorder } from "react-icons/md";
 
 export const ProductCard = ({ heading, para, price }) => {
   return (
@@ -23,7 +24,7 @@ export const BlogCard = ({ image, link, heading, para }) => {
           src={image}
           alt="Blog Image"
         />
-        <span className="clip-custom-polygon absolute left-7 top-0 bg-light px-3 py-2 pb-4 text-center font-sansSerifAlt font-bold text-primary">
+        <span className="absolute left-7 top-0 bg-light px-3 py-2 pb-4 text-center font-sansSerifAlt font-bold text-primary clip-custom-polygon">
           22 <br /> Dec
         </span>
       </div>
@@ -60,6 +61,43 @@ export const ChefCard = ({ image, name, role }) => {
           {name}
         </h4>
         <p className="capitalize">{role}</p>
+      </div>
+    </div>
+  );
+};
+
+export const TestimonialCard = ({ image, name, para }) => {
+  return (
+    <div className="group flex flex-col items-center justify-center bg-light p-5">
+      <div className="mb-4 h-36 w-36 overflow-hidden rounded-full">
+        <img
+          className="scale-1 h-full w-full object-cover object-center transition-all duration-500 group-hover:scale-[1.1]"
+          src={image}
+          alt="Testimonial"
+        />
+      </div>
+      <div className="text-center">
+        <h4 className="mb-2 font-sansSerifAlt text-2xl font-bold text-dark">
+          {name}
+        </h4>
+        <div className="gap-02 mb-3 flex justify-center">
+          <div className="text-primary">
+            <MdOutlineStar />
+          </div>
+          <div className="text-primary">
+            <MdOutlineStar />
+          </div>
+          <div className="text-primary">
+            <MdOutlineStar />
+          </div>
+          <div className="text-primary">
+            <MdOutlineStarBorder />
+          </div>
+          <div className="text-primary">
+            <MdOutlineStarBorder />
+          </div>
+        </div>
+        <p className="text-dark">{para}</p>
       </div>
     </div>
   );

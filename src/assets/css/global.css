@@ -9,6 +9,7 @@
 body {
   /* @apply bg-body; */
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 ::selection {

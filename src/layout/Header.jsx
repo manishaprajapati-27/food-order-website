@@ -47,7 +47,7 @@ const Header = () => {
               <ul className="flex items-center justify-center gap-5">
                 <li>
                   <a
-                    className="ease text-dark transition duration-500 hover:text-primary"
+                    className="ease font-medium text-dark transition duration-500 hover:text-primary"
                     href="#"
                   >
                     Home
@@ -55,14 +55,14 @@ const Header = () => {
                 </li>
                 <li>
                   <a
-                    className="ease text-dark transition duration-500 hover:text-primary"
+                    className="ease font-medium text-dark transition duration-500 hover:text-primary"
                     href="#"
                   >
                     About
                   </a>
                 </li>
               </ul>
-              <div className="logo px-5">
+              <div className="px-5">
                 <h1 className="font-cursive text-4xl text-dark">
                   Food<span className="">Juction</span>
                 </h1>
@@ -70,7 +70,7 @@ const Header = () => {
               <ul className="flex items-center justify-center gap-5">
                 <li>
                   <a
-                    className="ease text-dark transition duration-500 hover:text-primary"
+                    className="ease font-medium text-dark transition duration-500 hover:text-primary"
                     href="#"
                   >
                     Menu
@@ -78,7 +78,7 @@ const Header = () => {
                 </li>
                 <li>
                   <a
-                    className="ease text-dark transition duration-500 hover:text-primary"
+                    className="ease font-medium text-dark transition duration-500 hover:text-primary"
                     href="#"
                   >
                     Contact
